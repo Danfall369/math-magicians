@@ -98,8 +98,8 @@ To run the project, execute the following command: ``` npm start ```
 To run linters tests, run the following command:
 
 <ul>
-  <li>for looking error on js, use ESlint running this code on the terminal: ``` npx eslint "**/*.{js,jsx}" ```</li>
-  <li>for looking error on js, use ESlint running this code on the terminal: ``` npx stylelint "**/*.{css,scss}" ```</li>
+  <li>for looking error on js, use ESlint running this code on the terminal: npx eslint "**/*.{js,jsx}"</li>
+  <li>for looking error on js, use ESlint running this code on the terminal: npx stylelint "**/*.{css,scss}"</li>
 </ul>
 
 ### Deployment
