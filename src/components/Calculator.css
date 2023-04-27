@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+}
+
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-wrapper {
+  background-color: white;
+  width: 40rem;
+  border-radius: 16px;
+}
+
+.rows {
+  display: flex;
+}
