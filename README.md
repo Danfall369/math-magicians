@@ -54,7 +54,7 @@ By building this application, using React.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- N/A
+- You can see a live Demo of this proyect <a href="https://danfall369.github.io/math-magicians/" >HERE</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
