@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-wrapper {
+  background-color: white;
+  width: 40rem;
+}
+
+.rows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.last-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}

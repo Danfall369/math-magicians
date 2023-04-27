@@ -54,59 +54,63 @@ By building this application, using React.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- N/A
+- You can see a live Demo of this proyect <a href="https://components--jade-capybara-ddb707.netlify.app/" >HERE</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<ul>
-<li>Visual Code Studio</li>
-<li>Git Bash</li>
-<li>Node.js</li>
-</ul>
+In order to run this project you need the following tools:
+- Node.js in your computer
+- IDE(e.g.: Vscode,...)
+- Terminal
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder by running the following commands in your terminal:
 
--sh
-  cd (your folder)
-  https://github.com/Danfall369/math-magicians.git
+```sh
+  cd your-prefered-folder-name
+  
+  git clone https://github.com/Danfall369/math-magicians.git
+```
 
 ### Install
 
-Install this project with:
+- Install this project with:
 
-To install this project, you need to run: ``` npm install ```
+```sh
+  cd math-magicians
+
+  npm install or npm i
+```
+
+- Run an optimized build for prodction:
+```
+  npm run build
+```
 
 ### Usage
 
-To run the project, execute the following command: ``` npm start ```
+To run the project, execute the following command:
 
-<p>-With Visual Studio Code, open the folder where you downloaded this repository</p>
+```sh
+  npm start
 
+```
 
-### Run Linters Test
+### Run tests
 
-To run linters tests, run the following command:
+To run tests, run the following command:
 
-<ul>
-  <li>for looking error on js, use ESlint running this code on the terminal: npx eslint "**/*.{js,jsx}"</li>
-  <li>for looking error on js, use ESlint running this code on the terminal: npx stylelint "**/*.{css,scss}"</li>
-</ul>
-
-### Deployment
-
-You can deploy this project using:
-
-<p>-GitHub or GitHub Desktop</p[>
+```sh
+  npm run test
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
