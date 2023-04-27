@@ -11,6 +11,7 @@ body {
 .calc-wrapper {
   background-color: white;
   width: 40rem;
+  transform: translateY(30px);
 }
 
 .rows {
@@ -23,4 +24,43 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+}
+
+.buttons-wrapper {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #e0e0e0;
+  color: black;
+  flex: 1;
+  margin: 1px;
+}
+
+.bigbutton-wrapper {
+  height: 4em;
+  width: 19.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #e0e0e0;
+  color: black;
+  margin-left: 1px;
+}
+
+.input-wrapper {
+  background-color: #858693;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.result {
+  flex: 1;
+  font-size: 24px;
+  color: white;
 }
