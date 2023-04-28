@@ -38,6 +38,23 @@ body {
   margin: 1px;
 }
 
+.buttons-wrapper:nth-child(4n) {
+  background-color: #f5913e;
+}
+
+.button-equal {
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #e0e0e0;
+  color: black;
+  flex: 1;
+  margin: 1px;
+  background-color: #f5913e;
+}
+
 .bigbutton-wrapper {
   height: 4em;
   width: 19.9rem;
