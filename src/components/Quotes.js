@@ -34,7 +34,7 @@ function Quotes() {
   if (isLoading) return <div>Loading...</div>;
 
   return (
-    <div>
+    <div className="Quoutes">
       {quotes.map((quote) => (
         <div className="quote-container" key={quote}>
           <h2 className="quotes-title">Stars Quotes</h2>
