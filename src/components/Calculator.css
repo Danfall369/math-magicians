@@ -11,7 +11,7 @@ body {
 .calc-wrapper {
   width: 20rem;
   background-color: white;
-  transform: translateY(8rem);
+  transform: translateY(10px);
   border-radius: 10px;
 }
 

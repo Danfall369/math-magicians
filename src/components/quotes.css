@@ -4,9 +4,8 @@
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  width: 20rem;
   padding: 10px 15px 10px 15px;
-  transform: translateY(8rem);
+  transform: translateY(1rem);
 }
 
 h2 {

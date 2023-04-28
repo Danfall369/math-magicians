@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './quotes.css';
+import './Quotes.css';
 
 function Quotes() {
   const category = 'movies';
