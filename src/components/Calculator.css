@@ -12,18 +12,13 @@ body {
   background-color: white;
   width: 40rem;
   transform: translateY(30px);
+  border-radius: 10px;
 }
 
 .rows {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-}
-
-.last-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
 }
 
 .buttons-wrapper {
@@ -36,35 +31,19 @@ body {
   color: black;
   flex: 1;
   margin: 1px;
+  border-radius: 10px;
 }
 
 .buttons-wrapper:nth-child(4n) {
   background-color: #f5913e;
 }
 
-.button-equal {
-  height: 4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  background-color: #e0e0e0;
-  color: black;
-  flex: 1;
-  margin: 1px;
-  background-color: #f5913e;
+.buttons-wrapper:nth-child(17) {
+  grid-column: 1 / span 2;
 }
 
-.bigbutton-wrapper {
-  height: 4em;
-  width: 19.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  background-color: #e0e0e0;
-  color: black;
-  margin-left: 1px;
+.buttons-wrapper:nth-child(19) {
+  background-color: #f5913e;
 }
 
 .input-wrapper {
@@ -74,6 +53,7 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 16px;
+  border-radius: 5px;
 }
 
 .result {
