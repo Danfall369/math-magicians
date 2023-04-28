@@ -1,35 +1,50 @@
 import './Calculator.css';
-import Buttons from './Buttons';
-import Bigbutton from './Big-Button';
-import Input from './input';
+import { useState } from 'react';
+import calculate from '../logic/calculate';
 
 function Calculator() {
+  const btnValues = [
+    'AC', '+/-', '%', '÷',
+    '7', '8', '9', 'x',
+    '4', '5', '6', '-',
+    '1', '2', '3', '+',
+    '0', '.', '=',
+  ];
+
+  const [result, setResult] = useState({
+    total: 0,
+    operation: null,
+    next: null,
+  });
+
+  const handleButtonClick = (buttonName) => {
+    setResult((prevState) => {
+      const newResult = calculate(prevState, buttonName.target.textContent);
+      return { ...prevState, ...newResult };
+    });
+  };
+
   return (
     <div className="calc-container">
       <div className="calc-wrapper">
-        <Input />
-        <div className="rows">
-          <Buttons symbol="AC" />
-          <Buttons symbol="+/-" />
-          <Buttons symbol="%" />
-          <Buttons symbol="÷" color="#f5913e" />
-          <Buttons symbol="7" />
-          <Buttons symbol="8" />
-          <Buttons symbol="9" />
-          <Buttons symbol="X" color="#f5913e" />
-          <Buttons symbol="4" />
-          <Buttons symbol="5" />
-          <Buttons symbol="6" />
-          <Buttons symbol="-" color="#f5913e" />
-          <Buttons symbol="1" />
-          <Buttons symbol="2" />
-          <Buttons symbol="3" />
-          <Buttons symbol="+" color="#f5913e" />
+        <div className="input-wrapper">
+          <div className="result">
+            {result.total}
+            {result.operation}
+            {result.next}
+          </div>
         </div>
-        <div className="last-row">
-          <Bigbutton symbol="0" />
-          <Buttons symbol="." />
-          <Buttons symbol="=" color="#f5913e" />
+        <div className="rows">
+          {btnValues.map((value) => (
+            <button
+              type="button"
+              className="buttons-wrapper"
+              onClick={handleButtonClick}
+              key={value}
+            >
+              {value}
+            </button>
+          ))}
         </div>
       </div>
     </div>
