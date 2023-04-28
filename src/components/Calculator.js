@@ -1,6 +1,7 @@
 import './Calculator.css';
 import { useState } from 'react';
 import calculate from '../logic/calculate';
+import Quotes from './Fetch-API';
 
 function Calculator() {
   const btnValues = [
@@ -47,6 +48,7 @@ function Calculator() {
           ))}
         </div>
       </div>
+      <Quotes />
     </div>
   );
 }
