@@ -25,29 +25,35 @@ function Calculator() {
   };
 
   return (
-    <div className="calc-container">
-      <div className="calc-wrapper">
-        <div className="input-wrapper">
-          <div className="result">
-            {result.total}
-            {result.operation}
-            {result.next}
+    <>
+      <div>
+        <h1 className="calc-title">Let&apos;s do some Math!</h1>
+      </div>
+      <div className="calc-container">
+        <div className="calc-wrapper">
+          <div className="input-wrapper">
+            <div className="result">
+              {result.total}
+              {result.operation}
+              {result.next}
+            </div>
+          </div>
+          <div className="rows">
+            {btnValues.map((value) => (
+              <button
+                type="button"
+                className="buttons-wrapper"
+                onClick={handleButtonClick}
+                key={value}
+              >
+                {value}
+              </button>
+            ))}
           </div>
         </div>
-        <div className="rows">
-          {btnValues.map((value) => (
-            <button
-              type="button"
-              className="buttons-wrapper"
-              onClick={handleButtonClick}
-              key={value}
-            >
-              {value}
-            </button>
-          ))}
-        </div>
       </div>
-    </div>
+
+    </>
   );
 }
 export default Calculator;

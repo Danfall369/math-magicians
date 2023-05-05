@@ -1,5 +1,9 @@
 body {
-  background-color: black;
+  background-color: lightgrey;
+}
+
+.calc-title {
+  padding-left: 3rem;
 }
 
 .calc-container {
@@ -10,9 +14,11 @@ body {
 
 .calc-wrapper {
   width: 20rem;
-  background-color: white;
-  transform: translateY(10px);
+  background-color: gray;
+  margin: 1rem auto;
   border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: -8px 10px 26px -8px rgba(0, 0, 0, 0.75);
 }
 
 .rows {
@@ -60,4 +66,5 @@ body {
   flex: 1;
   font-size: 24px;
   color: white;
+  font-family: "Orbitron", sans-serif;
 }

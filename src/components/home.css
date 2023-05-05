@@ -1,0 +1,24 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 9rem auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: -8px 10px 26px -8px rgba(0, 0, 0, 0.75);
+  background-color: white;
+}
+
+.text-container {
+  padding: 30px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
