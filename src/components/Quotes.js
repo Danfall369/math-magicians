@@ -29,7 +29,7 @@ function Quotes() {
     fetchData();
   }, [category]);
 
-  if (hasError || Number(quotes.length) === 0) { return <div>Something went wrong!</div>; }
+  if (hasError || Number(quotes.length) === 0) { return <div className="error">Something went wrong!</div>; }
 
   if (isLoading) return <div>Loading...</div>;
 

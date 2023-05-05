@@ -9,11 +9,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid black;
+  border-radius: 10px;
   padding: 10px 15px 10px 15px;
-  transform: translateY(1rem);
+  margin: 9rem auto;
   height: 90%;
   width: 90%;
+  box-shadow: -8px 10px 26px -8px rgba(0, 0, 0, 0.75);
 }
 
 h2 {
@@ -26,4 +28,12 @@ h2 {
 
 .author {
   color: white;
+}
+
+.error {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
 }
