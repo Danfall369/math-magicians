@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './quotes.css';
+import '../Style/quotes.css';
 
-function Quotes() {
+const Quotes = () => {
   const category = 'movies';
   const [quotes, setQuotes] = useState([]);
   const [hasError, setHasError] = useState(false);
@@ -12,7 +12,7 @@ function Quotes() {
       setIsLoading(true);
       try {
         const response = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${category}`, {
-          headers: { 'X-Api-Key': 'YMtuGdG5UXWjRab+D8cK6Q==2z8CCTPqpNffUtUY' },
+          headers: { 'X-Api-Key': 'cw1sCZ0TspAVMmL1VYR95A==qPbxZI6CH7KNYcWy' },
           contentType: 'application/json',
         });
         if (!response.ok) {
@@ -29,9 +29,13 @@ function Quotes() {
     fetchData();
   }, [category]);
 
-  if (hasError || Number(quotes.length) === 0) { return <div className="error">Something went wrong!</div>; }
+  if (isLoading) {
+    return <div className="alert alert-success loading" role="alert">Loading...</div>;
+  }
 
-  if (isLoading) return <div>Loading...</div>;
+  if (hasError || quotes.length === 0) {
+    return <div className="alert alert-danger error" role="alert">Something went wrong!</div>;
+  }
 
   return (
     <div className="Quoutes">
@@ -44,6 +48,6 @@ function Quotes() {
       ))}
     </div>
   );
-}
+};
 
 export default Quotes;

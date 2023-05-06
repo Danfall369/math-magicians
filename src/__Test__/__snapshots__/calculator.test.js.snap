@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator renders correctly 1`] = `
+<div>
+  <h1
+    class="calc-title"
+  >
+    Let's do some Math!
+  </h1>
+</div>
+`;
