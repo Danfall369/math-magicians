@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.css';
+import '../Style/home.css';
 
 const Home = () => (
   <section className="Container">
