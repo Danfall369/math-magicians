@@ -24,8 +24,17 @@
   text-decoration: none;
   color: white;
 }
+.titleCont {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 2rem;
+}
 
 .nav-title {
-  padding-left: 3rem;
   color: white;
 }

@@ -4,6 +4,7 @@ body {
 
 .calc-title {
   padding-left: 3rem;
+  color: white;
 }
 
 .calc-container {
@@ -13,7 +14,7 @@ body {
 }
 
 .calc-wrapper {
-  width: 20rem;
+  width: 28%;
   background-color: gray;
   margin: 1rem auto;
   border-radius: 10px;

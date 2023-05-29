@@ -3,16 +3,22 @@ import Calculator from './components/Calculator';
 import Quotes from './components/Quotes';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
+import math from './assets/mathLoop.mp4';
+import './Style/App.css';
 
 function App() {
   return (
     <Router>
       <div className="container">
         <NavBar />
+        <video autoPlay loop muted className="mathVideo">
+          <source src={math} type="video/mp4" />
+        </video>
+        <div className="title" />
         <Routes>
-          <Route path="/" exact Component={Home} />
-          <Route path="/calculator" Component={Calculator} />
-          <Route path="/quotes" Component={Quotes} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quotes" element={<Quotes />} />
         </Routes>
       </div>
     </Router>
