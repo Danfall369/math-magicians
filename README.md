@@ -53,6 +53,7 @@ By building this application, using React.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+![mathGif](./src//assets//mobile.gif)
 
 - You can see a live Demo of this proyect <a href="https://danfall-react-calculator.netlify.app/" >HERE</a>
 
