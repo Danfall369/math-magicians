@@ -33,7 +33,10 @@
 # 📖 Math Magicians <a name="about-project"></a>
 
 
-**Math Magicians** "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+![mathmagicians](https://github.com/Danfall369/math-magicians/assets/122949998/2a6ca8f5-b9eb-4a75-82ab-b1a2492d7f23)
+
+
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
 - Make simple calculations.
 - Read a random math-related quote.
